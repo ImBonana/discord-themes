@@ -43,7 +43,11 @@
 }
 
 .blockedIgnoredSettingsNotice__6811a {
-    background-color: rgba(0, 0, 0, var(--var-opacity-titlebar)) !important;;
+    background-color: rgba(0, 0, 0, var(--var-opacity-titlebar)) !important;
+}
+
+.textContentFooter__9a337 {
+    background: linear-gradient(0deg,rgba(0, 0, 0, var(--var-opacity-titlebar)),rgba(0, 0, 0, var(--var-opacity-titlebar)) 36px,transparent) !important;
 }
 
 *, ::placeholder {
@@ -369,15 +373,16 @@ nav.container__2637a {
     background: rgba(0, 0, 0, var(--var-opacity-left-sidebar)) !important;
 }
 
-.panels_c48ade,
-.container__37e49,
-.panel__5dec7.activityPanel_c48ade {
+.panels_c48ade {
     background: transparent !important;
 }
+
+.panels_c48ade .container__37e49 {
+    background: rgba(0, 0, 0, var(--var-opacity-titlebar)) !important;
+    border-radius: 5px;
+}
+
 .theme-light .panels_c48ade {
-    background: transparent !important;
-}
-.theme-dark .container__37e49 {
     background: transparent !important;
 }
 
@@ -871,7 +876,7 @@ nav.container__2637a {
 }
 
 .wrapper__44df5 {
-    background: transparent;
+    background: rgba(0, 0, 0, var(--var-opacity-titlebar)) !important;
 }
 ::-webkit-scrollbar-track {
     visibility: hidden;
