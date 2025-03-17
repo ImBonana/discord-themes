@@ -30,6 +30,22 @@
     0.6 --var-opacity-option with 1.8 --var-color-saturation        */
 }
 
+.visual-refresh.theme-dark, .visual-refresh .theme-dark {
+    --background-primary: transparent !important;
+    --background-base-lower: transparent !important;
+    --activity-card-background: transparent !important;
+    --background-surface-high: transparent !important;
+    --background-base-lowest: transparent !important;
+}
+
+.itemCard__7e549 {
+    background-color: transparent !important;
+}
+
+.blockedIgnoredSettingsNotice__6811a {
+    background-color: rgba(0, 0, 0, var(--var-opacity-titlebar)) !important;;
+}
+
 *, ::placeholder {
 	font-family: var(--var-font-family), 'Roboto', '-apple-system', 'Helvetica Neue', 'system-ui', 'Arial', 'Helvetica', 'Whitney', sans-serif !important;
 }
@@ -233,8 +249,8 @@ body::before {
     filter: saturate(var(--var-color-saturation)) contrast(var(--var-contrast));
 }
 
-.sidebar_c48ade {
-    background: transparent;
+.sidebar_c48ade, .sidebar_c48ade::after {
+    background: transparent !important;
 }
 
 .container__01ae2:not(.floating__01ae2) {
@@ -431,7 +447,7 @@ nav.container__2637a {
 .theme-dark .scroller__99e7c {
     background: rgba(0, 0, 0, var(--var-opacity-left-sidebar)) !important;
 }
-.theme-dark .searchBar__35e86 {
+.theme-dark .searchBar__35e86, .searchBar__5ec2f {
     background: rgba(0, 0, 0, var(--var-opacity-titlebar)) !important;
     border-top-left-radius: 8px;
 }
@@ -542,7 +558,7 @@ nav.container__2637a {
     background: rgba(0, 0, 0, 0.25);
 }
 .container__133bf {
-    background: transparent;
+    background: transparent !important;
 }
 
 .wrapper_cb9592.minimum_cb9592 {
@@ -909,7 +925,7 @@ nav.container__2637a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--bg-overlay-selected, var(--icon-muted));
+    background: rgba(150, 150, 250, 0.2);
     opacity: 0.35;
     z-index: -1;
     filter: saturate(var(--var-color-saturation));
