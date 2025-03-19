@@ -50,6 +50,10 @@
     background: linear-gradient(0deg,rgba(0, 0, 0, var(--var-opacity-titlebar)),rgba(0, 0, 0, var(--var-opacity-titlebar)) 36px,transparent) !important;
 }
 
+.root_bfe55a {
+	background: none !important;
+}
+
 *, ::placeholder {
 	font-family: var(--var-font-family), 'Roboto', '-apple-system', 'Helvetica Neue', 'system-ui', 'Arial', 'Helvetica', 'Whitney', sans-serif !important;
 }
