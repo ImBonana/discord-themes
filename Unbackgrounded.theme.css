@@ -229,15 +229,24 @@ body::before {
     background-color: var(--brand-500);
 }
 
-[class*="jumpToPresentBar"] > button::before {
-    content: "🠇";
-    color: white;
-    font-size: 32.27px;
-    text-align: center;
-    aspect-ratio: 1 / 1;
-    transform: translateY(2px);
-}
+[class*="jumpToPresentBar"] {
+    & > button {
+        min-width: unset;
+        
+        &::before {
+            content: "🠇";
+            color: white;
+            font-size: 32.27px;
+            text-align: center;
+            aspect-ratio: 1 / 1;
+            transform: translateY(2px);
+        }
+    }
 
+    & > div {
+        display: none;
+    }
+}
 
 /* MICA */
 body,
@@ -766,9 +775,11 @@ nav.container__2637a {
     background: rgba(255, 255, 255, 0.15);
 }
 
-.theme-dark .profilePanel_b433b4 .userPanelOuter_c69a7b,
-.theme-light .profilePanel_b433b4 .userPanelOuter_c69a7b {
-    background: transparent !important;
+.root__24502:has(.user-profile-modal),
+.layer_da8173 .user-profile-popout:not(.custom-user-profile-theme) {
+    background: none !important;
+    backdrop-filter: blur(5px);
+
 }
 
 .theme-dark .overlayBackground_c69a7b:not(.userPopoutOverlayBackground_c69a7b) {
