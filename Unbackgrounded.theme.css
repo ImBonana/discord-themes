@@ -706,6 +706,10 @@ nav.container__2637a {
     padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs)) !important;
 }
 
+.container_c48ade:has(~ .standardSidebarView__23e6b) {
+    display: none;
+}
+
 @media only screen and (max-width: 638px) {
 
     .theme-dark .content_c48ade:has(.forumOrHome__49676) .sidebar_c48ade:not(:hover) .scroller__629e4 {
@@ -1361,4 +1365,12 @@ nav.container__2637a {
 
 .align-chat-input .scrollerSpacer__36d07 {
     height: 15px;
+}
+
+.shopScroll__08415 {
+    background-color: transparent;
+}
+
+.shopCard_c3d04b .cardText_c3d04b {
+    background-color: rgba(from var(--background-surface-higher) r g b / 40%) !important;
 }
