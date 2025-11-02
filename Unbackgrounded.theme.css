@@ -60,11 +60,10 @@
     -webkit-backdrop-filter: none !important;
 }
 
-*,
+*:not([data-username-with-effects]):not(:has(> [data-username-with-effects])):not(.fontText_fc7677),
 ::placeholder {
     font-family: var(--var-font-family), 'Roboto', '-apple-system', 'Helvetica Neue', 'system-ui', 'Arial', 'Helvetica', 'Whitney', sans-serif !important;
 }
-
 /* SECTION - Rounded Corners */ 
 body::before {
     border-radius: var(--var-window-radius) !important;
@@ -1374,3 +1373,26 @@ nav.container__2637a {
 .shopCard_c3d04b .cardText_c3d04b {
     background-color: rgba(from var(--background-surface-higher) r g b / 40%) !important;
 }
+
+
+/* Sidebar cat above divider */
+.user-profile-sidebar > [class^="inner_"] > [class^="footer__"] {border: none;}
+.user-profile-sidebar > [class^="inner_"] > [class^="footer__"]::before {
+    display: block;
+    border-bottom: 1px solid var(--user-profile-border);
+    
+    /* The cat */
+    content: 
+   "  ╱|、   \a"
+ "  (˚ˎ 。7  \a"
+  "  |、˜〵\  \a"
+"    じしˍ,)ノ";
+
+    white-space: pre;
+    inset: 0;
+    padding: 0 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
+/* End sidebar cat above divider */
